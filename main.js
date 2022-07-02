@@ -10,8 +10,9 @@ const names = [
 'Bedside Manor',
 'Cheap Tint',
 'Vanilla Promise',
-'Sintax',
-'Perlin Noise / Perlin Worms',
+'Sintax / Sintacks',
+'Perlin Noise',
+'Perlin Worms',
 'Rosehips',
 'Raining April',
 'Atlatl',
@@ -23,7 +24,7 @@ const names = [
 'Young 100',
 'Sir Real',
 'Cruise Control',
-'Kidd Fire (fire in Texas)',
+'Kidd Fire',
 'Mental Defective',
 'Mind\'s Eye',
 'Drunken Youth',
@@ -36,13 +37,13 @@ const names = [
 'Collective Effective',
 'Serif / Seriffs',
 'Sun Rhythm',
-'Verruco (verrucotoxin)',
+'Verruco',
 'Dangerous, Beautiful',
 'Protocall',
 '2lips',
 'Ginger Tinge',
 'Acute Strangle',
-'Need Be / If Need Be',
+'(If) Need Be',
 'Rolling On Rocks / Roll On Rocks',
 'Big Picture',
 'Megahigh Maniac',
@@ -60,7 +61,8 @@ const names = [
 'Dead Cat Bounce',
 'Nonsense',
 'Almost Bloodless',
-'Crush Cookie / Crushed Cookie',
+'Crushed Cookie',
+'Cookie Crush',
 'Famous Love Blink',
 'Vitriol',
 'Deathbed',
@@ -93,20 +95,21 @@ const names = [
 'Trilemma',
 'Primal Yawp',
 'Slightly Stoned',
-'Euclidean/Hyperbolic Kale',
+'Euclidean Kale',
+'Hyperbolic Kale',
 'No Residue',
 'Boiling Rocks',
 'Gallows Humor',
 'Cartoon',
 'Dystopia',
 'Bias',
-'Aphid Bee Moth (David Lee Roth)',
+'Aphid Bee Moth',
 'Metell',
 'Bad Temptation',
 'My Last One',
 'Ego Deaf',
 'Triple Aluminum',
-'Espionaj (espionage)',
+'Espionaj',
 'zer0 day',
 'Polymath',
 'Christ Consciousness',
@@ -118,7 +121,7 @@ const names = [
 'Unsliced Phrase',
 'Shame',
 'HODL',
-'Doppler/Dopplr',
+'Doppler / Dopplr',
 'Night Light',
 'Psychocillibeans',
 'Spaghetti Western',
@@ -159,5 +162,9 @@ function newBandName() {
   mainCard.style.display = 'block';
 }
 
-// const newNameButton = document.getElementById('newNameButton');
-// newNameButton.onclick = newBandName;
+function changeButtonText() {
+  const newNameButton = document.getElementById('newNameButton');
+  if (newNameButton.innerText !== "Suggest another name!") {
+    newNameButton.innerText = "Suggest another name!" ;
+  }
+}
